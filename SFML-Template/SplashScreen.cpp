@@ -19,7 +19,7 @@ void SplashScreen::render()
 	window->draw(splashSprite);
 }
 
-void SplashScreen::update(float deltaTime)
+void SplashScreen::update(int deltaTime)
 {
 }
 

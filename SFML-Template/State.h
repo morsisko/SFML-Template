@@ -12,7 +12,7 @@ public:
 	State(GameStateManager* manager, sf::RenderWindow* window);
 	virtual void handleEvent(const sf::Event &event) = 0;
 	virtual void render() = 0;
-	virtual void update(float deltaTime) = 0;
+	virtual void update(int deltaTime) = 0;
 	virtual ~State() = 0;
 };
 
