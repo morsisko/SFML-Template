@@ -5,7 +5,7 @@
 Game::Game(sf::String title, int width, int height) : window(sf::VideoMode(width, height), title)
 {
 	window.setFramerateLimit(60);
-	manager.setState(std::make_unique<SplashScreen>(&manager, &window));
+	manager.setState(std::make_unique<SplashScreen>(&manager, &window, 1000));
 }
 
 void Game::start()
