@@ -4,8 +4,7 @@
 
 void SplashScreen::onTimeOver()
 {
-	elapsedTime = 0;
-	std::cout << "Time is over\n";
+	manager->setState(std::make_unique<MenuState>(manager, window));
 }
 
 SplashScreen::SplashScreen(GameStateManager* manager, sf::RenderWindow* window, int miliseconds) : State(manager, window)

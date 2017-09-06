@@ -1,6 +1,8 @@
 #pragma once
 #include "State.h"
 #include <iostream>
+#include "MenuState.h"
+
 class SplashScreen :
 	public State
 {
