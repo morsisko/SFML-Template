@@ -11,6 +11,7 @@ MenuState::MenuState(GameStateManager* manager, sf::RenderWindow* window) : Stat
 	playBtn.setFont(font);
 	playBtn.setString("Play");
 	playBtn.setCharacterSize(50);
+	playBtn.setPosition(window->getSize().x / 2 - playBtn.getGlobalBounds().width / 2, window->getSize().y / 2 - playBtn.getGlobalBounds().height / 2);
 }
 
 void MenuState::handleEvent(const sf::Event & event)
@@ -29,7 +30,7 @@ void MenuState::update(int deltaTime)
 
 void MenuState::play()
 {
-	std::cout << "Play\n";
+	manager->setState(std::make_unique<GameState>(manager, window));
 }
 
 MenuState::~MenuState()

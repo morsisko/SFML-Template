@@ -13,7 +13,7 @@ void SimpleButton::handleEvent(const sf::Event & event)
 	{
 		case sf::Event::MouseMoved:
 		{
-			bool contains = getGlobalBounds().contains(sf::Vector2f(event.mouseMove.x, event.mouseMove.y));
+			bool contains = getGlobalBounds().contains(sf::Vector2f(static_cast<float>(event.mouseMove.x), static_cast<float>(event.mouseMove.y)));
 			if (contains && !focused)
 			{
 				focused = true;
@@ -28,7 +28,7 @@ void SimpleButton::handleEvent(const sf::Event & event)
 
 		case sf::Event::MouseButtonReleased:
 		{
-			bool contains = getGlobalBounds().contains(sf::Vector2f(event.mouseButton.x, event.mouseButton.y));
+			bool contains = getGlobalBounds().contains(sf::Vector2f(static_cast<float>(event.mouseButton.x), static_cast<float>(event.mouseButton.y)));
 
 			if (contains)
 				onClick();

@@ -12,7 +12,7 @@ SplashScreen::SplashScreen(GameStateManager* manager, sf::RenderWindow* window, 
 	splashTexture.loadFromFile("assets/logo.png");
 	splashSprite.setTexture(splashTexture);
 
-	splashSprite.setPosition(window->getSize().x / 2 - splashTexture.getSize().x / 2, window->getSize().y / 2 - splashTexture.getSize().y / 2);
+	splashSprite.setPosition(window->getSize().x / 2.0f - splashTexture.getSize().x / 2.0f, window->getSize().y / 2.0f - splashTexture.getSize().y / 2.0f);
 
 	this->disappearTime = miliseconds;
 }
