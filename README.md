@@ -11,3 +11,8 @@ Template which provide way to handling scenes designed for SFML
   * Menu screen
   * SimpleButton class which change button on mouse move, and handle your custom onClick functions (thanks to std::function)
   * Game screen which can handle your awesome games
+  
+# Examples
+
+Games which are based on SFML-Template state/screen flow:
+  * [Flappy Bird](https://github.com/morsisko/SFML-FlappyBird/)
