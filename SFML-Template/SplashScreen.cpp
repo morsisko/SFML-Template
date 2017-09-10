@@ -26,9 +26,9 @@ void SplashScreen::render()
 	window->draw(splashSprite);
 }
 
-void SplashScreen::update(int deltaTime)
+void SplashScreen::update(const sf::Time & deltaTime)
 {
-	elapsedTime += deltaTime;
+	elapsedTime += deltaTime.asMilliseconds();
 
 	if (elapsedTime >= disappearTime)
 		onTimeOver();

@@ -24,7 +24,7 @@ void MenuState::render()
 	window->draw(playBtn);
 }
 
-void MenuState::update(int deltaTime)
+void MenuState::update(const sf::Time & deltaTime)
 {
 }
 

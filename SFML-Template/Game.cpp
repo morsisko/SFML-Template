@@ -22,7 +22,7 @@ void Game::start()
 		}
 
 		window.clear();
-		manager.update(frameClock.restart().asMilliseconds());
+		manager.update(frameClock.restart());
 		manager.render();
 		window.display();
 	}

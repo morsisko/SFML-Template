@@ -17,7 +17,7 @@ public:
 	SplashScreen(GameStateManager* manager, sf::RenderWindow* window, int miliseconds);
 	virtual void handleEvent(const sf::Event &event);
 	virtual void render();
-	virtual void update(int deltaTime);
+	virtual void update(const sf::Time &deltaTime);
 	virtual ~SplashScreen();
 };
 

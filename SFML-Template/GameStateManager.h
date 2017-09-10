@@ -11,7 +11,7 @@ public:
 	GameStateManager();
 	void handleEvent(const sf::Event &event);
 	void render();
-	void update(int deltaTime);
+	void update(const sf::Time &deltaTime);
 	void setState(std::unique_ptr<State> state);
 	~GameStateManager();
 };

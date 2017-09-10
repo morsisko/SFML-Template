@@ -14,7 +14,7 @@ void GameState::render()
 {
 }
 
-void GameState::update(int deltaTime)
+void GameState::update(const sf::Time & deltaTime)
 {
 }
 

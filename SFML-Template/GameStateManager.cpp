@@ -16,7 +16,7 @@ void GameStateManager::render()
 	currentState->render();
 }
 
-void GameStateManager::update(int deltaTime)
+void GameStateManager::update(const sf::Time & deltaTime)
 {
 	currentState->update(deltaTime);
 }

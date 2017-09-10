@@ -14,7 +14,7 @@ public:
 	MenuState(GameStateManager* manager, sf::RenderWindow* window);
 	virtual void handleEvent(const sf::Event &event);
 	virtual void render();
-	virtual void update(int deltaTime);
+	virtual void update(const sf::Time &deltaTime);
 	~MenuState();
 };
 
